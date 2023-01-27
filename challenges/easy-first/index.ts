@@ -6,7 +6,7 @@ type First<T extends any[]> = T extends [infer FirstEl, ...any[]]
 
 /* tests */
 
-import type { Equal, Expect } from "../utils";
+import type { Equal, Expect } from "../../utils";
 
 type cases = [
   Expect<Equal<First<[3, 2, 1]>, 3>>,

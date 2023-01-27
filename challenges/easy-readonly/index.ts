@@ -6,7 +6,7 @@ type MyReadonly<T extends Record<string, any>> = {
 
 /* tests */
 
-import type { Equal, Expect } from "../utils";
+import type { Equal, Expect } from "../../utils";
 
 type cases = [Expect<Equal<MyReadonly<Todo1>, Readonly<Todo1>>>];
 

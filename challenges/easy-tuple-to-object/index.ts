@@ -6,7 +6,7 @@ type TupleToObject<T extends readonly PropertyKey[]> = {
 
 /* tests */
 
-import type { Equal, Expect } from "../utils";
+import type { Equal, Expect } from "../../utils";
 
 const tuple = ["tesla", "model 3", "model X", "model Y"] as const;
 const tupleNumber = [1, 2, 3, 4] as const;
