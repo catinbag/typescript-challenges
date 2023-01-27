@@ -2,7 +2,6 @@
 
 type PromiseByFn<T> = { then: (onfulfilled: (arg: T) => any) => any };
 
-// number to all
 type MyAwaitedObj<T extends PromiseByFn<any>> = T extends PromiseByFn<infer Arg>
   ? Arg
   : never;
