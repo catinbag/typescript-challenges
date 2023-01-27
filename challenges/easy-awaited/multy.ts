@@ -2,9 +2,7 @@
 
 type PromiseByFn<T> = { then: (onfulfilled: (arg: T) => any) => any };
 
-type MyAwaitedObj<T extends PromiseByFn<any>> = T extends PromiseByFn<infer Arg>
-  ? Arg
-  : never;
+type MyAwaitedObj<T extends PromiseByFn<any>> = T extends PromiseByFn<infer Arg> ? Arg : never;
 
 type MyAwaitedPromise<T> = T extends Promise<infer TRes>
   ? TRes extends Promise<any>

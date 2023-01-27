@@ -1,8 +1,6 @@
 /* template */
 
-type First<T extends any[]> = T extends [infer FirstEl, ...any[]]
-  ? FirstEl
-  : never;
+type First<T extends any[]> = T extends [infer FirstEl, ...any[]] ? FirstEl : never;
 
 /* tests */
 
