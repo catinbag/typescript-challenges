@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@type-challenges/utils": ["./utils"]
-    }
+    },
+    "lib": ["es6"]
   }
 }
