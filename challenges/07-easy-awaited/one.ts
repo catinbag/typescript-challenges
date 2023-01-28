@@ -12,7 +12,7 @@ type MyAwaited<T extends object> = T extends PromiseByFn<infer F>
 
 /* tests */
 
-import type { Equal, Expect } from "../../utils";
+import type { Equal, Expect } from "@type-challenges/utils";
 
 type X = Promise<string>;
 type Y = Promise<{ field: number }>;

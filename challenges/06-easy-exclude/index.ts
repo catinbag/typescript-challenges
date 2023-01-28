@@ -4,7 +4,7 @@ type MyExclude<T, U> = T extends U ? never : T;
 
 /* tests */
 
-import type { Equal, Expect } from "../../utils";
+import type { Equal, Expect } from "@type-challenges/utils";
 
 type cases = [
   Expect<Equal<MyExclude<"a" | "b" | "c", "a">, "b" | "c">>,

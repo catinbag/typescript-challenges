@@ -4,7 +4,7 @@ type Length<T extends readonly any[]> = T["length"];
 
 /* tests */
 
-import type { Equal, Expect } from "../../utils";
+import type { Equal, Expect } from "@type-challenges/utils";
 
 const tesla = ["tesla", "model 3", "model X", "model Y"] as const;
 const spaceX = ["FALCON 9", "FALCON HEAVY", "DRAGON", "STARSHIP", "HUMAN SPACEFLIGHT"] as const;

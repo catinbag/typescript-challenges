@@ -6,7 +6,7 @@ type MyOmit<T extends Record<string, any>, K extends keyof T> = {
 
 /* tests */
 
-import type { Equal, Expect } from "../../utils";
+import type { Equal, Expect } from "@type-challenges/utils";
 
 type cases = [
   Expect<Equal<Expected1, MyOmit<Todo, "description">>>,

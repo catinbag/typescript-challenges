@@ -4,7 +4,7 @@ type MyReturnType<T> = T extends (...args: any[]) => infer Res ? Res : never;
 
 /* tests */
 
-import type { Equal, Expect } from "../../utils";
+import type { Equal, Expect } from "@type-challenges/utils";
 
 type cases = [
   Expect<Equal<string, MyReturnType<() => string>>>,

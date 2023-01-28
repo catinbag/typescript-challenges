@@ -8,7 +8,7 @@ type MyReadonly2<T, K extends keyof T = keyof T> = {
 
 /* tests */
 
-import type { Alike, Expect } from "../../utils";
+import type { Alike, Expect } from "@type-challenges/utils";
 
 type cases = [
   Expect<Alike<MyReadonly2<Todo1>, Readonly<Todo1>>>,
