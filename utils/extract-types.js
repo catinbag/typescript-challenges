@@ -1,10 +1,10 @@
-const regex = /\w+<\w+<(?<payload>.+), "/;
+const regex = /\w+<\w+<(?<payload>.+),.+,?/g;
 
 function extract(str) {
   const values = str
     .split("\n")
     .filter(Boolean)
-    .map((row, index) => `type A${index + 1} = ${row.match(regex).pop()}`);
+    .map((row, index) => `type A${index + 1} = ${row.match(regex)?.pop()}`);
 
   return values.join("\n");
 }
