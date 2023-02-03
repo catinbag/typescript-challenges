@@ -33,7 +33,7 @@ type RemoveUnusedZeros<T extends string> = T extends `0${infer First}${infer Res
 
 type ConvertStr<T extends string> = ToNumber<RemoveUnusedZeros<Reverse<MinusOneInStr<Reverse<T>>>>>;
 
-type MinusOne<T extends number> = T extends 0 ? -1 : ConvertStr<ToString<T>>;
+export type MinusOne<T extends number> = T extends 0 ? -1 : ConvertStr<ToString<T>>;
 
 /* tests */
 
