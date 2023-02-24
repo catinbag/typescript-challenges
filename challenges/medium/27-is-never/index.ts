@@ -1,6 +1,6 @@
 /* template */
 
-type IsNever<T> = [T] extends [never] ? true : false;
+export type IsNever<T> = [T] extends [never] ? true : false;
 
 import type { Equal, Expect } from "@type-challenges/utils";
 
