@@ -1,6 +1,6 @@
 /* template */
 
-type Reverse<T extends unknown[]> = T extends []
+export type Reverse<T extends unknown[]> = T extends []
   ? []
   : T extends [infer First, ...infer Rest]
   ? [...Reverse<Rest>, First]

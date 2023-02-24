@@ -15,7 +15,10 @@ type CompareLength<T extends any[], U extends any[]> = IsEqual<
   ? -1
   : U["length"];
 
-type IndexOf<T extends any[], U, Acc extends any[] = []> = CompareLength<T, GetArr<T, U, Acc>>;
+export type IndexOf<T extends any[], U, Acc extends any[] = []> = CompareLength<
+  T,
+  GetArr<T, U, Acc>
+>;
 
 /* tests */
 
