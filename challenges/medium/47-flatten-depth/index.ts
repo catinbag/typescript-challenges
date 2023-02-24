@@ -1,4 +1,4 @@
-import { MinusOne } from "../46-medium-minus-one";
+import { MinusOne } from "../33-minus-one";
 
 /* template */
 
