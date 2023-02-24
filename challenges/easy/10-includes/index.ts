@@ -4,7 +4,7 @@ type IfEquals<T, U> = (<G>() => G extends T ? 3 : 4) extends <G>() => G extends 
   ? true
   : false;
 
-type Includes<T extends readonly any[], U> = T extends [infer First, ...infer Rest]
+export type Includes<T extends readonly any[], U> = T extends [infer First, ...infer Rest]
   ? IfEquals<First, U> extends true
     ? true
     : Includes<Rest, U>
