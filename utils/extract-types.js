@@ -9,7 +9,7 @@ function extract(str) {
 
       const { payload, res } = item.groups;
 
-      return `type A${index + 1} = ${payload} // ${res}`;
+      return `type T${index + 1} = ${payload} // ${res}`;
     });
 
   return values.join("\n");
